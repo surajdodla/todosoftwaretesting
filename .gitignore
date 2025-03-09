@@ -1,0 +1,31 @@
+# Backend Node.js dependencies
+backend/node_modules
+
+# Logs
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/pnpm-debug.log*
+
+# Environment variables
+backend/.env
+
+# Build and cache files
+backend/dist/
+backend/build/
+backend/.cache/
+
+# Jest test outputs
+backend/coverage/
+backend/jest-coverage/
+backend/test-results.xml
+
+# Ignore IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Ignore GitHub Actions logs
+backend/.github/workflows/*.log

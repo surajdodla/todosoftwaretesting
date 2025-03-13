@@ -38,6 +38,7 @@ describe("Todo API - Integration Tests", () => {
     test("DELETE /api/todos/:id should return 404 if task ID is not found", async () => {
         const response = await request(app).delete(`/api/todos/99999`);
         expect(response.status).toBe(404);
+        expect(response.status).toBe(404);
         expect(response.body.error).toBe("Todo not found");
     });
 });

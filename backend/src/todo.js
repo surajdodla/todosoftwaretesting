@@ -4,9 +4,9 @@ function addTodo(todos, newTodo) {
     return [...todos, newTodo];
 }
 
-// function deleteTodo(todos, id) {
-//     return todos.filter(todo => todo.id !== id);
-// }
+function deleteTodo(todos, id) {
+    return todos.filter(todo => todo.id !== id);
+}
 
 function updateTodo(todos, id, updatedText) {
     return todos.map(todo =>
@@ -19,7 +19,7 @@ function getTodos(todos) {
 }
 
 module.exports = { addTodo, 
-    // deleteTodo, 
+    deleteTodo, 
     updateTodo, 
     getTodos 
 };

@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    color: #333;
+}
+
+/* Input and Button Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Add Button */
+button.add {
+    background-color: #28a745;
+    color: white;
+}
+
+button.add:hover {
+    background-color: #218838;
+}
+
+/* Todo List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;  /* ✅ Ensures spacing between text & buttons */
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+/* Ensures the text stays on the left */
+.todo-text {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px; /* ✅ Adds some padding */
+}
+
+/* ✅ Ensures buttons stay together on the right */
+.todo-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Delete and Edit Buttons */
+button.delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.edit {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+}
+
+button.edit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .todo-buttons {
+        flex-direction: row; /* ✅ Keeps buttons in a row */
+    }
+}

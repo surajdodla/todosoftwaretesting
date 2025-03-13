@@ -31,10 +31,10 @@ async function fetchTodos() {
             editBtn.onclick = () => editTodo(todo.id);
 
             // Delete button
-            const deleteBtn = document.createElement("button");
-            deleteBtn.classList.add("delete");
-            deleteBtn.textContent = "Delete";
-            deleteBtn.onclick = () => deleteTodo(todo.id);
+            // const deleteBtn = document.createElement("button");
+            // deleteBtn.classList.add("delete");
+            // deleteBtn.textContent = "Delete";
+            // deleteBtn.onclick = () => deleteTodo(todo.id);
 
             buttonDiv.appendChild(editBtn);
             buttonDiv.appendChild(deleteBtn);

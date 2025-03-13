@@ -20,7 +20,7 @@ describe("Todo API - Integration Tests", () => {
 
         todoId = response.body.id; 
     });
-    //update an existing task
+
     test("PUT /api/todos/:id should modify an existing task", async () => {
         const updatedText = { text: "Enhance CI/CD workflow" };
         const response = await request(app).put(`/api/todos/${todoId}`).send(updatedText);

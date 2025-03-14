@@ -11,9 +11,12 @@ function updateTodo(todos, id, updatedText) {
         todo.id === id ? { ...todo, text: updatedText } : todo
     );
 }
+function getTodos(todos) {
+    return todos;
+}
 
 
-module.exports = { addTodo, deleteTodo, updateTodo
+module.exports = { addTodo, deleteTodo, updateTodo, getTodos
 
       
 };

@@ -6,9 +6,14 @@ function addTodo(todos, newTodo) {
 function deleteTodo(todos, id) {
     return todos.filter(todo => todo.id !== id);
 }
+function updateTodo(todos, id, updatedText) {
+    return todos.map(todo =>
+        todo.id === id ? { ...todo, text: updatedText } : todo
+    );
+}
 
 
-module.exports = { addTodo, deleteTodo
+module.exports = { addTodo, deleteTodo, updateTodo
 
       
 };
